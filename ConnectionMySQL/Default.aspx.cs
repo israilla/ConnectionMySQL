@@ -14,7 +14,7 @@ namespace ConnectionMySQL
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            MySqlConnection conexao = new MySqlConnection("server=localhost; User Id=root; Database=COMERCIO; Password=caroli@#db1597");
+            MySqlConnection conexao = new MySqlConnection("server=localhost; User Id=root; Database=COMERCIO; Password= pwd");
             MySqlCommand comando = new MySqlCommand ("SELECT * FROM CLIENTE", conexao);
             DataTable Cliente = new DataTable();
             try
